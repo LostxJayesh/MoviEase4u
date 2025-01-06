@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="theme-color" content="#141414">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <title>MoviEase4u - Your Ultimate Entertainment Hub</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">MoviEase4u</a>
+            </div>
+            
+            <div class="mobile-menu-icon">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <div class="nav-content">
+                <ul class="nav-links">
+                    <li><a href="#allSection" class="nav-link active">
+                        <i class="fas fa-globe"></i> All
+                    </a></li>
+                    <li><a href="#moviesSection" class="nav-link">
+                        <i class="fas fa-film"></i> Movies
+                    </a></li>
+                    <li><a href="#seriesSection" class="nav-link">
+                        <i class="fas fa-tv"></i> Series
+                    </a></li>
+                    <li><a href="#animeSection" class="nav-link">
+                        <i class="fas fa-play-circle"></i> Anime
+                    </a></li>
+                </ul>
+                
+                <div class="nav-actions">
+                    <div class="search-container">
+                        <div class="search-box">
+                            <input type="text" id="searchInput" placeholder="Search movies, series...">
+                            <button type="button" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <a href="https://t.me/MoviEase4u" class="telegram-link" target="_blank" title="Request Content">
+                        <i class="fab fa-telegram"></i>
+                        <span>Request</span>
+                    </a>
+                    
+                    <a href="admin.html" class="admin-link" title="Admin Panel">
+                        <i class="fas fa-user-shield"></i>
+                    </a>
+                </div>
+            </div>
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <main class="main-content">
+        <!-- All Section -->
+        <section id="allSection" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-globe"></i>
+                        All Content
+                    </h2>
+                </div>
+                <div id="allGrid" class="content-grid">
+                    <!-- All content will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Movies Section -->
+        <section id="moviesSection" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-film"></i>
+                        Movies
+                    </h2>
+                </div>
+                <div id="moviesGrid" class="content-grid">
+                    <!-- Movies will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Series Section -->
+        <section id="seriesSection" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-tv"></i>
+                        Series
+                    </h2>
+                </div>
+                <div id="seriesGrid" class="content-grid">
+                    <!-- Series will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Anime Section -->
+        <section id="animeSection" class="content-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>
+                        <i class="fas fa-play-circle"></i>
+                        Anime
+                    </h2>
+                </div>
+                <div id="animeGrid" class="content-grid">
+                    <!-- Anime will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div id="toast" class="toast"></div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About MoviEase4u</h3>
+                    <p>Your ultimate destination for high-quality entertainment content. Download movies, series, and anime hassle-free.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#allSection"><i class="fas fa-globe"></i> All</a></li>
+                        <li><a href="#moviesSection"><i class="fas fa-film"></i> Movies</a></li>
+                        <li><a href="#seriesSection"><i class="fas fa-tv"></i> Series</a></li>
+                        <li><a href="#animeSection"><i class="fas fa-play-circle"></i> Anime</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Contact Us</h3>
+                    <p>Request your favorite content through our Telegram channel:</p>
+                    <a href="https://t.me/MoviEase4u" class="telegram-button" target="_blank">
+                        <i class="fab fa-telegram"></i>
+                        Join Telegram Channel
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 MoviEase4u. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
